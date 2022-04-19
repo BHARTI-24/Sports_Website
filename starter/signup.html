@@ -6,13 +6,17 @@
   <!-- favicon -->
   <link rel="shortcut icon" href="./assets/favicon.jpg" type="image/x-icon" />
   <link rel="stylesheet" href="./css/style.css">
+  
+    <!-- <link rel="stylesheet" href="./css/main.css" />  -->
 
 </head>
 
-<body>
-  <header>
+<body class="signbody">
+  <!-- start here -->
+  <!-- <header> -->
     <div class="logo">
-      <img src="./assets/logo.png" alt="bmsce logo">
+        <img src="./assets/logo.png" alt="bmsce logo">
+      
       <div class="image1">
         <p class="top1"><strong>
             <h1 class="top1" font-size="500%">BMSCE SPORTS PLATFORM</h1>
@@ -26,31 +30,37 @@
       <h1>SPORTS EVENTS PLATFORM</h1>
       <h4>WANNA PARTICIPATE | SIGN UP HERE</h4>
       <div class="container">
-        <form id="form" class="form">
+        
+        <form id="form" class="form" action="./index.html" method="GET">
           <h2>SIGN HERE</h2>
-          <div class="form-control">
+          <!-- Username -->
+          <div class="form-control ">
             <label for="username">Username</label>
-            <input type="text" id="username" placeholder="Enter Username">
+            <input type="text" id="username" placeholder="Enter Username" name="username">
             <small>Error Message</small>
           </div>
+          <!-- email -->
           <div class="form-control">
             <label for="email">Email</label>
-            <input type="text" id="email" placeholder="Enter email">
+            <input type="email" id="email" placeholder="Enter email" name="email">
             <small>Error Message</small>
           </div>
+          <!-- Password -->
           <div class="form-control">
             <label for="password">Password</label>
-            <input type="password" id="password" placeholder="Enter password">
+            <input type="password" id="password" placeholder="Enter password" name="password">
             <small>Error Message</small>
           </div>
+          <!-- Password2 -->
           <div class="form-control">
             <label for="password2">Confirm Password</label>
-            <input type="password" id="password2" placeholder="Enter password again">
+            <input type="password" id="password2" placeholder="Enter password again" name="confirmpassword">
             <small>Error Message</small>
           </div>
-          <button>Submit</button>
-          <!-- <button type="submit" value="Submit"><a href="home.html">
-              SUBMIT</a></button> -->
+
+          <!-- Submit Button -->
+          <button type="submit" class="btn">Submit</button>
+          <!-- <button type="submit" value="Submit"></button> -->
         </form>
       </div>
 

@@ -6,17 +6,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SPORTS PLATFORM</title>
+    <link rel="stylesheet" href="./css/reg.css">
+
     <!-- favicon -->
     <link rel="shortcut icon" href="./assets/favicon.jpg" type="image/x-icon" />
-    <!-- normalize -->
-    <link rel="stylesheet" href="./css/normalize.css" />
+    
     <!-- font-awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
     <!-- main css -->
     <link rel="stylesheet" href="./css/main.css" />
 </head>
 
-<body>
+<body id="b" onload="document.registration.name.focus()">
+    
     <!-- nav -->
     <nav class="navbar">
         <div class="nav-center">
@@ -31,28 +33,99 @@
             </div>
             <!-- links -->
             <div class="nav-links">
-                <a href="https://bmsce.ac.in/" target="_blank" class="homelogo"><img src="./assets/logo.png"
-                        alt="bmsce logo"></a>
+                <a href="https://bmsce.ac.in/" target="_blank" class="homelogo"><img src="./assets/logo.png" alt="bmsce logo"></a>
                 <a href="index.html" class="nav-link">home</a>
                 <a href="about.html" class="nav-link">about</a>
                 <a href="tags.html" class="nav-link">tags</a>
                 <a href="facilities.html" class="nav-link">facilities</a>
                 <a href="achievements.html" class="nav-link">achievements</a>
-                <a href="feedback.html" class="nav-link">feedback</a>
+                <a href="registration.html" class="nav-link">Register</a>
                 <div class="nav-link contact-link">
                     <a href="contact.html" class="btn">contact</a>
                 </div>
             </div>
         </div>
     </nav>
-    <main class="page">
-        <div>
-
-        </div>
-        <h1>
-            Registration
+    <!-- --------body----- -->
+    <main class="page_reg">
+    <div class="regform">
+        <h1 >
+            Registration Form
         </h1>
-    </main>
+    </div>
+    <div class="main">
+        <form name="registration" onsubmit="return formValidation()">
+            <h2 class="name1"> Name</h2>
+            <input class="college" type="text" name="name" id="uname" 
+            placeholder="Enter your  name">
+            <!-- <h2 class="name1">Last Name</h2>
+            <input class="college" type="text" name="college" placeholder="Enter your last name"> -->
+
+            <h2 class="name1">College</h2>
+            <input class="college" type="text" name="college" placeholder="Enter your college name">
+
+            <h2 class="name1">USN</h2>
+            <input class="usn" type="text" name="usn" id="uusn" placeholder="Enter your USN">
+
+            <h2 class="name1">Email</h2>
+            <input class="email" type="email" name="email" id="uemail" 
+            placeholder="Enter your email">
+            <h2 class="name1">State</h2>
+            <input class="email" type="text" name="state"
+            placeholder="Enter your password">
+            <h2 class="name1">City</h2>
+            <input class="email" type="text" name="city"
+            placeholder="Re-enter your password">
+            <h2 class="name1">Date of Birth</h2>
+            <input class="email" type="date" name="dob"
+            placeholder="Enter your email">
+            <h2 class="name1">Mobile Number</h2>
+            <input class="number" type="number" id="unumber" name="MNUM"placeholder="Enter your number" >
+
+            <h2 class="name1">Address</h2>
+             <textarea name="address" class="email" cols="" rows="2"></textarea>
+          
+
+           
+           
+
+            <h2 class="name1">Sport</h2>
+            <select class="option" name="sport">
+                <option disabled="disabled" selected="selected">--Choose Option</option>
+                <option> Cricket</option>
+                <option> Basketball</option>
+                <option> Yoga</option>
+                <option> VolleybAll</option>
+                <option> Table Tennis</option>
+                <option> Football</option>
+                <option> Chess</option>
+                <option> Badminton</option>
+                <option> Throwball</option>
+                <option> Softball</option>
+                <option> Others</option>
+            </select>
+
+            <h2 id="student">Have you participated in any of the sports?</h2>
+            <label class="radio">
+                <input class="radio-one" type="radio" name="yes" value="yes">
+                <span class="checkmark"></span>
+                Yes
+            </label>
+
+            <label class="radio">
+                <input class="radio-two" type="radio" name="no" value="no">
+                <span class="checkmark"></span>
+                No
+            </label>
+
+            <button type="submit"  name="submit" value="Submit" onclick="AddRow()">Register</button>
+
+        </form>
+    </div>
+  </main>
+
+  <br><br>
+
     <footer class="page-footer">
         <p>
             &copy; <span id="date"></span>
@@ -60,6 +133,8 @@
         </p>
     </footer>
     <script src="./js/app.js"></script>
+    <script src="./js/reg.js"></script>
+    
 </body>
 
 </html>

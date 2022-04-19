@@ -2,58 +2,60 @@
 <html lang="en">
 
 <head>
-    <title>LOGIN | BMSCE SPORTS EVENTS </title>
-    <!-- favicon -->
-    <link rel="shortcut icon" href="./assets/favicon.jpg" type="image/x-icon" />
-    <link rel="stylesheet" href="./css/style.css">
-
+  <title>LOGIN | BMSCE SPORTS EVENTS </title>
+  <!-- favicon -->
+  <link rel="shortcut icon" href="./assets/favicon.jpg" type="image/x-icon" />
+  <link rel="stylesheet" href="./css/style.css">
+ 
 </head>
 
 <body>
-    <header>
-        <div class="logo">
-            <img src="./assets/logo.png" alt="bmsce logo">
-            <!-- </div> -->
-            <div class="image1">
-                <p class="top1"><strong>
-                        <h1 class="top1" font-size="300%">BMSCE SPORTS EVENTS PLATFORM</h1>
-                    </strong></p>
-            </div>
-        </div>
-    </header>
+  <!-- <header> -->
+  <div class="logo">
+    <img src="./assets/logo.png" alt="bmsce logo">
+   
+    <p class="top1"><strong>
+        <h1 class="top1" font-size="300%">BMSCE SPORTS EVENTS PLATFORM</h1>
+      </strong></p>
+  </div>
+  </div>
 
-    <center>
-        <h1>Login</h1>
-        <form>
-            <label for="username">Username</label>
-            <br>
-            <input type="username" placeholder="user name" value="" />
-            <br>
-            <br>
-            <label for="password">Password</label>
-            <br>
-            <input type="password" placeholder="password" value="" />
-            <br><br>
+  <center>
+ <h1> User Login</h1>
+ 
+ <div class="container">
+        
+  <form id="form" class="form" action="./index.html" method="GET">
+    <!-- Username -->
+    <div class="form-control ">
+      <label for="username">Username</label>
+      <input type="text" id="username" placeholder="Enter Username" name="username">
+      <small>Error Message</small>
+    </div>
+  
+    <!-- Password -->
+    <div class="form-control">
+      <label for="password">Password</label>
+      <input type="password" id="password" placeholder="Enter password" name="password">
+      <small>Error Message</small>
+    </div>
+   
+    <!-- Submit Button -->
+    <button type="submit" class="btn">Submit</button>
+  </form>
+</div>
+    <p>
+      Not have an account? <a href="signup.html">Sign Up Here</a>
+    </p>
 
-            <button type="submit" value="Submit"><a href="index.html">
-                    SUBMIT</a></button>
+  </center>
+  <footer>
+    <div class="image1">
+      <p class="top2">you have reached the end</p>
+    </div>
 
-
-
-
-        </form>
-
-        <p>
-            Not have an account? <a href="signup.html">Sign Up Here</a>
-        </p>
-
-    </center>
-    <footer>
-        <div class="image1">
-            <p class="top2">you have reached the end</p>
-        </div>
-
-    </footer>
+  </footer>
+<script src="./js/log.js"></script>
 </body>
 
 </html>
